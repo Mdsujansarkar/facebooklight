@@ -8,12 +8,14 @@ Author URL:sujansarkar.com
 Description:first 
 */
 
+// action hook start 
 add_action('widgets_init','newFacebookLightbox');
 function newFacebookLightbox(){
 
 	register_widget('FbClassName');
 }
 
+// Main class start
 class FbClassName extends WP_Widget{
 
 	public function __construct(){
@@ -21,5 +23,14 @@ class FbClassName extends WP_Widget{
 
          'Description' =>'Facebook like box'
 			));
+	}
+
+	public function widget( $args, $instance){ //widget function
+
+     
+	}
+
+	public function form( $instance ){
+
 	}
 }
