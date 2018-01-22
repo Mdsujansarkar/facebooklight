@@ -17,6 +17,9 @@ function newFacebookLightbox(){
 class FbClassName extends WP_Widget{
 
 	public function __construct(){
-		parent::__construct();
+		parent::__construct('our-facebook-like','FaceBook Like', array(
+
+         'Description' =>'Facebook like box'
+			));
 	}
 }
